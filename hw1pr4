@@ -1,0 +1,104 @@
+# coding: utf-8
+#
+# hw1pr4.py
+#
+
+""" 
+Title for your adventure:   The Piñata Quest.
+
+Notes on how to "win" or "lose" this adventure:
+  To win, choose to go to the party.
+  To lose, don't go to the party.
+
+"""
+
+import time
+
+def adventure():
+    """ this function runs one session of interactive fiction
+        Well, it's "fiction," depending on the pill color chosen...
+        arguments: no arguments (prompted text doesn't count as an argument)
+        results: no results     (printing doesn't count as a result)
+    """
+    delay = 0.0          # change to 0.0 for testing or speed runs,
+                         # ..larger for dramatic effect!
+
+    username = input("What do they call you, party animal? ")
+
+    print()
+    print("Welcome,", username, " to the party planning committee")
+    print("We're relying on you to make the perfect party activity!")
+    print()
+
+    print("Your grouling quest: To create the best piñata for a 6 year olds birthday!")
+    print()
+    shape = input("How should we shape it? Donkey, star, dinosaur, or any other suggestions?")
+    if shape == "donkey":
+        print("The classic donkey! Who doesn't love the donkey.")
+    elif shape == "star":
+        print("Ah, very basic and boring. It should be easy to create!")
+    elif shape == "dinosaur":
+        print("Who doesn't love dinosaurs?")
+    else:
+        print("Well... that's creative I guess.")
+    print()
+
+    print("Let's continue!\n\n")
+    print("A table magically expands before you with masses of colored paper.")
+    print("Huh... well you thought the magic table would at least give you more options.")
+    print("Before you, there are sets of orange and blues as well as pinks and blues.")
+    time.sleep(delay)
+    print()
+
+    choice1 = input("What color should we make the pinata? [orange and blue / pink and blue] ")
+    print()
+
+    if choice1 == "orange and blue":
+        print("A very classic color combo! I'm sure the kid will love this!")
+    elif choice1 == "pink and blue":
+        print("Wonderful choice. I overheard pink and blue is the childs favorite color!")
+    else:  
+        print("Where did you even get that from...? That wasn't an option")
+        print("Well, it's getting destroyed anyways so who cares.")
+    print()
+
+    print("Alright, moving on!")
+    print()
+    choice2 = input("Should we make this a huge pinata or a regular sized pinata?")
+    if choice2 == 'huge':
+        print("How generous. The kid is going to loooove this.")
+    elif choice2 == 'regular':
+        print("Not to big not to small. Just right!")
+    print()
+
+    print("Wow this pinata is turning out great!\n\n")
+    print("Now of course. We've gotta fill this thing up with candy or something!")
+
+    filling = input("What are you going to fill the pinata with?")
+    print()
+
+    if filling == 'candy' or 'Candy':
+        print("Of course!")
+    print()
+
+    print('Its an obvious choice!')
+    print('*You look at you creation and smile.* Its complete')
+    print()
+    print('Ah perfect timing too! The party is about to begin!')
+    print()
+
+    choice3 = input('Are you coming to the party?? Everyones waiting! [Yes / No]')
+    if choice3 =='Yes' or 'yes':
+        print()
+        print('You waltz into the childs birthday party')
+        print('The pinata is hung up and damn it looks amazing')
+        print('it almost brings a tear to your eye to see it be destroyed by the birthday kid')
+        print('but of course, all good things must come to an end. Plus, the kid looks as happy as can be!')
+        print('You will certainly be hired again!')
+    else:
+        print()
+        print('Dude really. Youre not gonna attend a 6 year olds birthday party?')
+        print('Go home and never make a pinata again.')  
+
+
+        
