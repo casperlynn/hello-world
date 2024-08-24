@@ -1,0 +1,19 @@
+Excercise 1:
+Part 1.) There could be hundreds of different surroundings for Picobot to encounter.
+It would depend on what was in the room like furniture, trash or other objects.
+Picobot could encounter these objects multiple times as well from different sides.
+It would also depend if there were half walls or anything of the sort as well.
+With it's internal states, it's possible it has 100 internal states.
+There can be more data that it posseses which helps it navigates with its order combo's of NEWSX.
+These different directional combos have 16 different combos it could utilize, which gives room for other data.
+Part 2.) In the lower left corner, Picobot can travel North all the way to the end of the room.
+It can turn and move one block to the east, then proceed to go back down in a line towards the South.
+Then it can go one block to the east again, then proceed to head back up North to the end.
+It can repeat these lined directions until it reaches the last block.
+
+Excercise 2:
+Part 1.)I don't believe it will change the number of different surroundings if it's still in the same sized room.
+We can't reuse the exact plan from exercice 1, but the idea of it snaking around can still work.
+Part 2.) Depending on where it could start, Picobot can travel in an open direction that will lead to an end wall. 
+It should travel alongside all of the walls first. Then it can travel in the oposite directon alongside the path again.
+It can repeat these actions sort of in a wonky spiral, following alongside the paths, until it gets to the lack empty area that it needs to reach.
